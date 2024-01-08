@@ -1,7 +1,9 @@
 
 const scoreE1 = document.getElementById["score1"];
 const scoreE2 = document.getElementById["score2"];
-const diceE6 = document.querySelector[".dice-6"];
+let diceDOM = document.getElementById('dice');
+diceDOM.src = "image/dice-${diceNumber}.png";
+
 
 // btn 
 
@@ -12,10 +14,9 @@ scoreE2.text = 0;
 dice.classList.add("hiden");
 
 
-btnRoll.addEventListener("click" , function (){
-    dice.classList.remove("hidden");
-})
+
+        // 3) Alors on fait naitre notre tama
+        const dice = Math.floor(math.random() * 6) + 1;
+        birth();
 
 
-//. generate the rndom number 
-const dice = Math.floor(math.random() * 6) + 1;
