@@ -107,7 +107,7 @@
                 } else if (index % 3 === 1) {
                         element.textContent = this.scores[inactivePlayer];
                 } else {
-                        lement.textContent = this.currentScores[inactivePlayer];
+                        element.textContent = this.currentScores[inactivePlayer];
                 }
                 });
                 }
