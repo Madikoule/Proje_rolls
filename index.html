@@ -17,7 +17,7 @@
 <body>
 <div class="container w-75 mt-3 clearfix">
     <!-----bloc player 1---->
-    <section class="player1-panel Active col-md-6">
+    <section class="player1-panel Active col-md-6 ">
         <div class="section1  ">
             <h2 class="name" id="name1">joueur 1</h2>
             <p class="score" id="score1">13</p>
@@ -35,15 +35,16 @@
         <button class="newBtn">
         <i class="fa-regular fa-circle-xmark"></i>new game</button>
 
-        <img src="assets/image/dice-1.png" alt="playing dice" class="dice-1" id="dice-img">
+        <img src="assets/image/dice-1.png " alt="playing dice" class="dice-1 img-fluid" id="dice-img">
 
     <button class="btn_roll">
-        <i class="fa-solid fa-rotate"></i>Roll roy</button>
+        <i class="fa-solid fa-rotate"></i>Roll Dice</button>
         
         <button class="btn_hold">
         <i class="fa-solid fa-arrow-up-from-bracket fa-rotate-180"></i>Hold</button>
 </div>
 
+<!--- bloc player 2---->
 
 
 <section class="player2-panel col-md-6">
@@ -55,8 +56,8 @@
         <p class="current_score" id="current2">0</p>
     </div>
 </div>
-<!------message-->
-<div id="victory-message" class="victory-message mt-3 col-md-12"></div>
+<!------message victoire-->
+<div id="victory-message" class="victory-message"></div>
 
 </section>
 
@@ -65,6 +66,5 @@
 
 <script src="script.js"></script>
 
-<!--- bloc player 2---->
 </body>
 </html>
