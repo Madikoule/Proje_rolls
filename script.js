@@ -1,5 +1,6 @@
         class Game {
                 // Le constructeur initialise les variables et configure les éléments DOM.
+                // la méthode constructor est utilisée pour créer et initialiser un objet lorsu'on utilise le mot clé class
                 constructor() {
                 // Scores et scores temporaires des joueurs
                 this.scores = [0, 0];
