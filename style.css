@@ -200,11 +200,13 @@ button:focus {
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:500px) {
     body {
-        min-width: 430px;
+        min-width: 500px;
+        width: 100%;
         
     }
+
     .container {
         justify-content:center;
         position: fixed;
@@ -216,15 +218,14 @@ button:focus {
     .dice-1 {
         height: 50px;
         
-        
     }
 
     button {
         font-size: 10px;
 
+
     }
     .current {
-        text-decoration: none;
         color: #222;
     }
     
