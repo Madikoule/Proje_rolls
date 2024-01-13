@@ -10,8 +10,7 @@ body {
     background-position: center;
     font-family: Lato;
     font-weight: 300;
-    position: relative;
-    height: 100vh;
+    height: 100px;
     color: #9f2c2c;
 }
 
@@ -23,11 +22,10 @@ body {
 }
 
 
-.container {
-    width: 1000px;
-    position: absolute;
+.bloc {
+    position: relative;
     display: flex;
-    top: 50%;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -45,9 +43,6 @@ body {
     height: 60%;
     padding: 100px;
 }
-
-
-
 
 
 .name {
@@ -93,6 +88,7 @@ body {
     text-align: center;
 }
 
+
 .current-label {
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -116,7 +112,6 @@ i {
     margin-top: -4px;
     transition: margin 0.3s;
 }
-
 
 
 .dice-1 {
@@ -147,16 +142,17 @@ button {
 }
 
 
-
 button:hover {
     font-weight: 600;
 
 }
 
+
 button:hover i { 
     margin-right: 20px;
 
 }
+
 
 button:focus {
     outline: none;
@@ -189,8 +185,8 @@ button:focus {
     display: none;
     font-size: 25px;
     font-weight: bold;
-    color: rgb(244, 126, 90);
-    margin-top: 50px;
+    color: rgb(246, 123, 61);
+    margin-top: 10px;
     text-align: left;
 }
 
@@ -199,34 +195,35 @@ button:focus {
     
 }
 
-
-@media screen and (max-width:500px) {
-    body {
-        min-width: 500px;
+/***** mediaa *******/
+@media screen and (max-width: 520px) {
+    .bloc {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        
+        align-items: center;
+        position: relative;
+        margin-top: 50%;
     }
 
-    .container {
-        justify-content:center;
-        position: fixed;
+
+    body {
+        text-decoration: none;
+        overflow-block:scroll;
     }
-}
 
 
-@media screen and (max-width:550px) {
+    .btn_hold {
+        left: 10%;
+        top: 665px;  
+    }
+
+    .btn_roll {
+        right: 10%;
+        top: 665px;  
+    }
+
     .dice-1 {
-        height: 50px;
-        
+        top: 600px; 
     }
-
-    button {
-        font-size: 10px;
-
-
-    }
-    .current {
-        color: #222;
-    }
-    
 }
